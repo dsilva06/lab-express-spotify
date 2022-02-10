@@ -1,0 +1,61 @@
+<div class="artists">
+    
+        {{#each artist}}
+        <div class="artist-info">
+        <h1>{{this.name}}</h1>
+        <img src="{{this.images.1.url}}" height="350px" width="auto" alt=""> <br>
+        <button><a href="/albums/{{this.id}}">View Albums</a></button>
+           </div>
+        {{/each}}
+ 
+
+</div>
+
+
+<style>
+    .artists {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: rgba(30, 215, 96,0.3);
+        height: 100%;
+        
+    }
+    .artist-info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+        text-align: center;
+    }
+    .artist-info img{
+        border: solid 12px black;
+        text-align: center;
+    }
+    .artist-info{
+
+    }
+    button{
+        background-color: #1DB954;
+        border: solid black;
+        height: 75px;
+        width: 250px;
+        margin: 0;
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    button:hover{
+        background-color: black;
+        border: #1DB954 solid;
+        color: #1DB954;
+    }
+    button a:hover{
+        color: #1DB954;
+    }
+</style>

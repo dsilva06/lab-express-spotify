@@ -1,0 +1,60 @@
+body{
+    background-image: url('/images/spotify-background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+.welcome{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-welcome{
+    text-align:center ;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+
+
+}
+#search-button{
+    background-color: #1DB954;
+    border: solid #ffffff;
+    color: #ffffff;
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+#search-button:hover{
+    color: #1DB954;
+    background-color: #ffffff;
+    border: solid #1DB954;
+    outline: none;
+}
+#search-artists{
+    height: 70px;
+    width: 75%;
+    margin: 25px;
+    border: #1DB954 solid;
+    outline-style: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+}
+
+#search-artists::placeholder{
+    color: white;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#search-artists::placeholder::after{
+    color: white;
+}
+
